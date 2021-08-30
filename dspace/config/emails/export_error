@@ -15,5 +15,7 @@ For more information you may contact your system administrator:
 
 
 
-The DSpace Team
+Regards,
+The eScholarship Team
+${config.get("mail.admin")}
 
