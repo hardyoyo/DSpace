@@ -12,11 +12,9 @@ below:
   ${params[0]}
 
 If you need assistance with your account, please email
+${config.get("mail.helpdesk")} or contact us via this page:
+https://help.escholarship.org/support/tickets/new
 
-  ${config.get("mail.helpdesk")}
-#if( $phone )
-
-or call us at ${phone}.
-#end
-
-The DSpace Team
+Regards,
+The eScholarship Team
+${config.get("mail.helpdesk")}
