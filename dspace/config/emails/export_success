@@ -14,5 +14,7 @@ ${params[0]}
 This file will remain available for at least ${params[1]} hours.
 
 
-The DSpace Team
+Regards,
+The eScholarship Team
+${config.get("mail.admin")}
 
