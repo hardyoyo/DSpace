@@ -11,6 +11,9 @@ below:
   ${params[0]}
 
 If you need assistance with your account, please email
-${config.get("mail.admin")} or call us at xxx-555-xxxx.
+${config.get("mail.admin")} or contact us via this page:
+https://help.escholarship.org/support/tickets/new
 
-The DSpace Team
+Regards,
+The eScholarship Team
+${config.get("mail.admin")}
