@@ -17,5 +17,5 @@ For more information you may contact your system administrator:
 
 Regards,
 The eScholarship Team
-${config.get("mail.admin")}
+${config.get("mail.helpdesk")}
 
