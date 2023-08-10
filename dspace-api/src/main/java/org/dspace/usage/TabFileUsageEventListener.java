@@ -82,7 +82,7 @@ public class TabFileUsageEventListener
             errorLog.error("{} cannot open file, will not log events:  {}",
                            TabFileUsageEventListener.class.getName(),
                            e.getMessage());
-            throw new IllegalArgumentException("Cannot open event log file", e);
+            throw new IllegalArgumentException("Cannot open UsageEvent log file", e);
         }
 
         if (logFile.length() <= 0) {

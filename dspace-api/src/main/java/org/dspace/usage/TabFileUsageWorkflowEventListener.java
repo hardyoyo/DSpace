@@ -15,11 +15,7 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.dspace.content.Collection;
-import org.dspace.content.InProgressSubmission;
 import org.dspace.core.Constants;
-import org.dspace.eperson.EPerson;
-import org.dspace.eperson.Group;
 import org.dspace.services.ConfigurationService;
 import org.dspace.services.model.Event;
 import org.dspace.utils.DSpace;
@@ -87,7 +83,7 @@ public class TabFileUsageWorkflowEventListener
             errorLog.error("{} cannot open file, will not log events:  {}",
                            TabFileUsageWorkflowEventListener.class.getName(),
                            e.getMessage());
-            throw new IllegalArgumentException("Cannot open event log file", e);
+            throw new IllegalArgumentException("Cannot open UsageWorkflowEvent log file", e);
         }
 
         // TODO: ensure we are logging the fields we need to log to be useful
