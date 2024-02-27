@@ -39,6 +39,16 @@ if [ "$JAVA_OPTS" = "" ]; then
   JAVA_OPTS="-Xmx256m -Dfile.encoding=UTF-8"
 fi
 
+# If the command is "shell" invoke JShell
+if [ "$1" = "shell" ]; then
+  # Set JAVA_OPTS for JShell
+  export JAVA_OPTS="-Xmx256m -Dfile.encoding=UTF-8"
+  # Invoke JShell
+  jshell --class-path $FULLPATH --startup $DSPACEDIR/config/dspace.jsh
+  exit 0
+fi
+
+
 # Now invoke Java
 java $JAVA_OPTS \
      -classpath $FULLPATH \
